@@ -42,9 +42,10 @@ class Grafos:
         G = nx.Graph()
 
         # Coloca os vértices e arestas no grafo G
-        G.add_node()
-        G.add_edge()
-        nx.draw_networkx(G, pos=nx.spring_layout(G), with_labels = True)
+        #G.add_node((2,3,4))
+
+        G.add_edges_from([(2,3), (2,5), (1,2)])
+        nx.draw(G, pos=nx.spring_layout(G), with_labels = True)
         plt.show()
 
     def tem_aresta(self,u,v):
@@ -112,3 +113,5 @@ g.adiciona_aresta_mult(1,4,7)
 g.eh_euleriano()
 g.tem_aresta(1,4)
 g.mostra_matriz()
+
+g.plot_grafo()
