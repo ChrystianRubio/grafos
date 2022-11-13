@@ -5,12 +5,14 @@ grau máximo, grau mínimo, número cromático, raio, diâmetro, perímetro, ár
  O programa pode ainda indicar se o grafo é conexo, acíclico, completo, Euleriano, Hamiltoniano, etc
  (isso também são propriedades). O programa deve oferecer ao usuário a possibilidade de abrir grafos
  já prontos que ilustrem algumas destas propriedade.'''
+
 import networkx as nx
 import matplotlib.pyplot as plt
 
 class Grafos: 
     
     def __init__(self,vertices):
+        #construtor
         self.vertices = vertices
         self.grafo = [[0]*self.vertices for i in range(self.vertices)]
         
